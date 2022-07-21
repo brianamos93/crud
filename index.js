@@ -15,10 +15,11 @@ const beersRouter = require('./routes/beers');
 const app = express()
 
 //Set up mongoose connection
-mongoose.connect(process.env.MONGODB_URL).then((dbo)=>{
-  console.log("DB connected")
+mongoose.connect(process.env.MONGODB_URL)
+.then((dbo)=>{
+  console.log('connected to MongoDB')
 },(err)=>{
-  console.log("error")
+  console.log('error connecting to MongoDB:', error.message)
 });
 
 // view engine setup

@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+
+//test data
 let beers = [
     {
         id: 1,
